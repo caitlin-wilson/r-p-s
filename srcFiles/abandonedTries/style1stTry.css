@@ -1,0 +1,140 @@
+/*DEFAULTS*/
+HTML, body {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	font-family: arial;
+	color: #73777a;
+	overflow-x: hidden;
+}
+
+/*COLORS
+blue = #b5c9d4
+tan = #ecede8
+grey = #73777a
+orange = #fd7e47
+*/
+
+/*FONT*/
+@font-face {
+    font-family: 'husky_stashregular';
+    src: url('../srcFiles/Fonts/husky_stash-webfont.woff2') format('woff2'),
+         url('../srcFiles/Fonts/husky_stash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*BODY & MAIN CONTAINER*/
+body {
+	background-image: url("../srcFiles/Elements/background.png");
+	overflow-y: hidden;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: .75fr 2fr .5fr 2fr .75fr;
+	grid-template-rows: 100px 5fr 18px;
+	grid-template-areas: 
+		"header header header header header"
+		" . computer versus player . "
+		"footer footer footer footer footer";
+	height: 100vh;
+	width: 100vw;
+	font-family: husky_stashregular;
+	font-size: 45px;
+}
+
+/*HEADER*/
+.header {
+	grid-area: header;
+	background-color: #fd7e47;
+	display: grid;
+	justify-content: center;
+	border-bottom: 18px solid #ecede8;
+}
+
+.title {
+	height: 100px;
+}
+
+/*COMPUTER*/
+.computer-side {
+	grid-area: computer;
+}
+
+.computer-outer-card {
+	background-color: #ecede8;
+	border-radius: 25px;
+	border: 5px solid #73777a;
+	margin: 25px;
+	padding: 15px;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 1fr 7fr 1fr;
+}
+
+.computer-outer-card:after {
+	padding-bottom: 100%;
+}
+
+.computer-inner-card {
+	background-color: #b5c9d4;
+	border-radius: 25px;
+	grid-column: 1;
+	grid-row: 2;
+	margin: 25px;
+}
+
+.computer-choice {
+	font-size: 30px;
+}
+
+/*VS*/
+.versus {
+	grid-area: versus;
+	align-self: center;
+	text-align: center;	
+	font-size: 75px;
+	color: #ecede8;
+	text-shadow: 
+		-1px -1px 0 #73777a,
+		1px -1px 0 #73777a,
+		-1px 1px 0 #73777a,
+		1px 1px 0 #73777a;
+}
+
+/*PLAYER*/
+.player-side {
+	grid-area: player;
+}
+
+.player-outer-card {
+	background-color: #ecede8;
+	border-radius: 25px;
+	border: 5px solid #73777a;
+	margin: 25px;
+	padding: 15px;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 1fr 7fr 1fr;
+	color: #fd7e47;
+}
+
+.player-inner-card {
+	background-color: #b5c9d4;
+	border-radius: 25px;
+	grid-column: 1;
+	grid-row: 2;
+	margin: 25px;
+}
+
+.player-choice {
+	font-size: 30px;
+}
+
+/*FOOTER*/
+.footer {
+	grid-area: footer;
+	background-color: #ecede8;
+}

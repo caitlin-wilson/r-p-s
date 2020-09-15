@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>R-P-S</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="page-container">
+	<div class="header">
+		<img class="title" src="srcFiles/Elements/title.png">
+	</div><!-- /end .header -->
+	<div class="main-body">
+		<div class="computer-side">
+			<div class="outer-card">
+				<div class="computer-title"><u>Computer</u></div><!-- /end .computer-title -->
+				<div class="inner-card">
+					<div class="computer-choice-pic">?</div><!-- /end .computer-choice-pic -->
+				</div><!-- /end inner-card -->
+				<div class="computer-choice">Waiting...</div><!-- /end .computer-choice --> 
+			</div><!-- /end .outer-card -->
+		</div><!-- / end .main-body -->
+		<div class ="versus">VS</div><!-- /end .versus -->
+		<div class="player-side">
+			<div class="outer-card">
+				<div class="player-title"><u>Player</u></div><!-- /end .player-title -->
+				<div class="inner-card">
+					<img class="player-choice-pic" src="srcFiles/Elements/rock.png"></img><!-- /end .computer-choice-pic -->
+				</div><!-- /end .inner-card -->
+				<div class="player-choice">
+					<select class="dropdown" onchange="selectWeapon()">
+						<option value="default">Choose One</option>
+						<option value="rock">Rock</option>
+						<option value="paper">Paper</option>
+						<option value="scissor">Scissor</option>
+					</select><!-- /end .dropdown -->
+					<button class="select-button">Go!</button><!-- /end .select-button -->
+				</div><!-- /end .player-choice -->
+			</div><!-- /end .outer-card -->
+		</div><!-- /end .playerside -->
+	</div><!-- /end .main-body -->
+	<div class="footer">&copy;drkphnxDesign</div><!-- /end .footer -->
+	</div><!-- /end .page-container -->
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

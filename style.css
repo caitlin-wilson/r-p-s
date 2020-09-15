@@ -1,0 +1,141 @@
+/*DEFAULTS*/
+HTML, body {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	color: #73777a;
+	overflow-x: hidden;
+	font-family: husky_stashregular;
+}
+
+* {
+	outline: none;
+	box-sizing: border-box; 	
+}
+
+/*FONT*/
+@font-face {
+    font-family: 'husky_stashregular';
+    src: url('srcFiles/Fonts/husky_stash-webfont.woff2') format('woff2'),
+         url('srcFiles/Fonts/husky_stash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*COLORS
+blue = #b5c9d4
+tan = #ecede8
+grey = #73777a
+orange = #fd7e47
+*/
+
+/*WHOLE PAGE CONTAINER*/
+body {
+	background-image: url("srcFiles/Elements/background.png");
+}
+
+.page-container {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	background-color: #fd7e47;
+	width: 100vw;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.title {
+	width: 40%;
+}
+
+.main-body {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.outer-card {
+	background-color: #ecede8;
+	width: 25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem 3rem;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	font-size: 3em;
+}
+
+.inner-card {
+	background-color: #b5c9d4;
+	width: 90%	;
+	height: 15rem;
+	text-align: center;
+	border-radius: 1.5rem;
+	margin: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: .8em;
+}
+
+.computer-choice-pic {
+	font-size: 4em;
+}
+
+.player-choice-pic {
+	width: 90%;
+}
+
+.dropdown {
+	font-size: .5em;
+	color: #73777a; 
+	border: .1rem solid #b5c9d4;
+}
+
+.dropdown:active, .dropdown:hover {
+	outline: #fd7e47;
+}
+
+.select-button {
+	border: 3px solid #b5c9d4;
+	border-radius: 10px;
+	font-size: .5em;
+	background-color: #b5c9d4;
+	color: #ecede8;
+}
+
+.select-button:hover {
+	cursor: pointer;
+	background-color: #73777a;	
+}
+
+.select-button:focus {
+	background-color: #fd7e47;
+}
+
+.versus {
+	font-size: 5rem;
+	color: #ecede8;
+	-webkit-text-stroke: .1rem #73777a;
+}
+
+.footer {
+	background-color: #ecede8;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+	.main-body {
+		flex-direction: column;
+	}
+}
