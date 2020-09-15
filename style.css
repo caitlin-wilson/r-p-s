@@ -63,7 +63,7 @@ body {
 
 .outer-card {
 	background-color: #ecede8;
-	width: 25rem;
+	width: 20rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -87,7 +87,7 @@ body {
 }
 
 .computer-choice-pic {
-	font-size: 4em;
+	height: 90%;
 }
 
 .player-choice-pic {
@@ -134,7 +134,7 @@ body {
 	width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media (orientation: portrait) {
 	.main-body {
 		flex-direction: column;
 	}
