@@ -90,6 +90,13 @@ body {
 	height: 90%;
 }
 
+.computer-choice {
+	font-family: arial;
+	font-weight: bolder;
+	font-size: .75em;
+	padding: .1em;
+}
+
 .player-choice-pic {
 	height: 90%;
 }
